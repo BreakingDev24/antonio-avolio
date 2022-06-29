@@ -1,0 +1,257 @@
+/*default style*/
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+em {
+  color: #738580;
+  text-decoration: none;
+  font-style: normal;
+}
+
+.section-title {
+  font-size: 3rem;
+  text-shadow: 4px 4px rgb(3, 3, 3);
+  font-weight: 600;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 60px;
+  height: 100%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #24232b;
+  color: white;
+  min-height: 100%;
+}
+
+li, a {
+  text-decoration: none;
+}
+
+.navbar {
+  background-color: #74959A;
+}
+.navbar .logo {
+  font-size: 3rem;
+  font-family: "Shadows Into Light", sans-serif;
+  color: #F1E0AC;
+}
+.navbar .logo em {
+  color: #24232b;
+  font-weight: 700;
+}
+.navbar .navbar-nav {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+}
+.navbar .navbar-nav .nav-item {
+  padding: 0 2rem;
+}
+.navbar .navbar-nav .nav-item .nav-link {
+  color: #F1E0AC;
+  border-radius: 1rem;
+}
+.navbar .navbar-nav .nav-item .nav-link:hover {
+  color: #74959A;
+  background-color: #F1E0AC;
+}
+.navbar .navbar-nav .nav-item .nav-link span {
+  display: inline-block;
+  width: 100%;
+}
+
+.container {
+  padding: 0 3rem !important;
+}
+
+.welcome-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+  padding: 130px 0;
+}
+.welcome-section .home-title {
+  line-height: 1.6;
+}
+.welcome-section .home-title h1 {
+  font-size: 5rem;
+  text-shadow: 4px 4px #738580;
+}
+.welcome-section .home-title h2, .welcome-section .home-title h3 {
+  font-size: 2rem;
+}
+.welcome-section .intro {
+  margin: 30px 0;
+  max-width: 30rem;
+  font-size: 16px;
+}
+.welcome-section .skills {
+  margin-bottom: 5rem;
+}
+.welcome-section .skills i {
+  font-size: 5rem;
+  margin: 5px;
+}
+.welcome-section .resume-btn {
+  font-size: 14px;
+  outline: 1px solid red;
+  color: white;
+  padding: 20px 50px;
+  margin: 30px 0;
+  text-align: center;
+  text-decoration: none;
+  width: 150px;
+  border-radius: 10px;
+}
+.welcome-section .resume-btn:hover {
+  background-color: rgba(247, 105, 105, 0.74);
+}
+
+.about-me p {
+  margin: 20px 0;
+  line-height: 1.8;
+  font-size: 1.6rem;
+}
+
+.project {
+  display: grid;
+  place-items: center center;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  padding: 20px;
+  gap: 40px;
+}
+.project .project-card {
+  padding: 10px;
+  background-color: rgba(71, 68, 64, 0.5764705882);
+  border-radius: 20px;
+  transform: scale(1);
+  transition: transform 0.2s ease-in-out 0s;
+}
+.project .project-card:hover {
+  cursor: pointer;
+  transform: scale(0.99);
+  transition: transform 0.2s ease-in-out 0s;
+  box-shadow: 0px 1px 10px 3px #F1E0AC;
+}
+.project .project-card .image img {
+  width: 100%;
+  border-radius: 20px;
+}
+.project .project-card .description {
+  margin: 20px 0;
+  padding: 10px 0;
+}
+.project .project-card .description h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.project .project-card .description p {
+  max-width: 80%;
+  font-size: 16px;
+}
+.project .project-card .description .project-link {
+  color: #F1E0AC;
+  font-size: 1.3rem;
+  padding: 0 5px;
+  background-color: #74959A;
+  border-radius: 20px;
+}
+
+.contact-me {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 2rem;
+}
+.contact-me .contact-me_box {
+  margin-top: 20px;
+  border-radius: 20px;
+  outline: 3px solid #F1E0AC;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px;
+  text-align: center;
+}
+.contact-me form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.contact-me form .form-element {
+  padding: 15px;
+  height: 30px;
+  width: 45vw;
+  font-size: 15px;
+}
+.contact-me form #mail {
+  margin-bottom: 10px;
+}
+.contact-me form #leave-a-message {
+  height: 10vh;
+  resize: none;
+}
+.contact-me form .form-btn {
+  color: white;
+  height: 40px;
+  width: 100px;
+  margin-top: 10px;
+  border-radius: 10px;
+  background-color: #74959A;
+  transition: 0.1s ease-in-out 0s;
+}
+.contact-me form .form-btn:hover {
+  transform: scale(1.1);
+}
+.contact-me form .form-btn:active {
+  transform: scale(1);
+}
+
+.social {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 20px;
+  font-size: 40px;
+  background-color: #74959A;
+}
+.social a {
+  color: #F1E0AC;
+  margin: 2rem;
+}
+
+@media (min-width: 768px) {
+  .section-title {
+    font-size: 3.5rem;
+  }
+
+  .welcome-section .home-title h1 {
+    font-size: 7rem;
+  }
+}
+.about-me p {
+  font-size: 2rem;
+}/*# sourceMappingURL=styles.css.map */

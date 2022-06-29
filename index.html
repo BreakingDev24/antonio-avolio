@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antonio Avolio</title>
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&family=Shadows+Into+Light&family=Smooch+Sans:wght@100&display=swap" rel="stylesheet">
+    <!-- font awesome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- bootstrap cdn  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+  </head>
+  <body>
+    <div class="wrapper">
+
+      <!-- bootstrap navbar  -->
+      <nav class="navbar navbar-expand-lg fixed-top" >
+        <div class="container-fluid">
+          <a class="logo" href="#home">
+            <em>A</em>ntonio <em>A</em>volio
+          </a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <!-- data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" close navbar when click on link;
+              doesn't work in <a> -->
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#about-me">
+                  <span data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">About</span>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#portfolio" >
+                  <span data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Portfolio</span>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#contact-me">
+                  <span data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Contact</span>
+                </a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- main bootstrap container  -->
+      <main class="container">
+        <section id="home" class="welcome-section">
+          <div class="home-title">
+            <h2>Welcome in My website</h2>
+            <h1>I'm Antonio Avolio</h1>
+            <h3>a junior web developer</h3>
+          </div>
+
+          <p class="intro"><em>Pragmatic</em> person, Full-stack student on <em>Start2impact</em>, Lakers fan, sport and video game <em>enthusiast</em>.</p>
+          <p class="skills">
+            <i class="fa-brands fa-html5" title="html icon"></i> 
+            <i class="fa-brands fa-css3-alt" title="css icon"></i> 
+            <i class="fa-brands fa-sass" title="sass icon"></i>
+            <i class="fa-brands fa-bootstrap" title="bootstrap icon"></i>
+          </p>
+            
+          <a href="assets/doc/antonio-avolio-cv.pdf" class="resume-btn" target="_blank">Resume</a>
+        </section>
+
+         <!-- about-me section  -->
+        <section id="about-me" class="about-me">
+          <h2 class="section-title">About <em>Me</em></h2>
+
+          <div class="about-me_paragraph">
+            <p>Hello! My name is Antonio and I am from Naples (Italy). I have always been passionate about technology and sport. </p>
+            <p>In 2021, I graduated with a degree in sport science. My university studies have enabled me to acquire knowledge not only in the field of sport but also in pedagogy and education.</p>
+            <p>In 2022, I decided to join Start2impact and embark on a study path to become a full stack web developer. </p>
+            <p>My ultimate goal is to combine my passions and create websites and applications that can contribute to improving the quality of education and promoting healthy living and well-being.</p>
+          </div>
+
+        </section>
+
+        <!-- porfolio  -->
+        <section id="portfolio" class="portfolio">
+          <h2 class="section-title">Porfol<em>io</em></h2>
+
+          <div id="projects" class="project">
+
+            <div class="project-tile project-card card-1 ">
+              <div class="image">
+                <img src="assets/img/landing-page.png" alt="landing-page project preview" loading="lazy">
+              </div>
+
+              <div class="description">
+                <h3>Landing Page FCC</h3>
+                <p>Responive Product landing page made for FreecodeCamp web design certification </p>
+                <a class="project-link" href="https://codepen.io/breakingdev24/pen/zYWYwro"><i class="fa-brands fa-codepen" title="codepen icon"></i>Watch on Codepen</a>
+              </div>
+                  
+            </div>
+
+            <div class="project-tile project-card card-2 ">
+              <div class="image">
+              <img src="assets/img/form.png" alt="form project preview">
+              </div>
+
+              <div class="description">
+                <h3>Survey Form FCC</h3>
+                <p>Responsive Online Survey Form made for FreecodeCamp web design certification </p>
+                <a class="project-link" href="https://codepen.io/breakingdev24/pen/LYdYWxN"><i class="fa-brands fa-codepen" title="codepen icon"></i>Watch on Codepen</a>
+              </div>
+            </div>
+
+            <div class="project-tile project-card card-3 ">
+              <div class="image">
+                <img src="assets/img/technical-page.png" alt="technical-page project preview" loading="lazy">
+              </div>
+
+              <div class="description">
+                <h3>Tech Doc Page FCC</h3>
+                <p>Responive Technical Documentation Page made for FreecodeCamp web design certification</p>
+                <a class="project-link" href="https://codepen.io/breakingdev24/pen/eYMYWpZ"><i class="fa-brands fa-codepen" title="codepen icon"></i>Watch on Codepen</a>
+              </div>
+            </div>
+
+            <div class="project-tile project-card card-4">
+              <div class="image">
+                <img src="assets/img/portfolio.png" alt="porfolio project preview" loading="lazy">
+              </div>
+
+              <div class="description">
+                <h3>Portfolio FCC</h3>
+                <p>First version of my responsive website made for FreecodeCamp web design certification</p>
+                <a class="project-link" href="https://codepen.io/breakingdev24/pen/eYMYWZz"><i class="fa-brands fa-codepen" title="codepen icon"></i>Watch on Codepen</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      
+       <!-- contact me section  -->
+        <section id="contact-me" class="contact-me">
+
+          <h2 class="section-title">Contact <em>Me</em></h2>
+          <div class="contact-me_box">
+              
+            <h1>get in touch</h1>
+            <p>if you are interested work with me leave a message</p>
+              
+            <form action="">
+                  
+              <input type="name" id="name" class="form-element" placeholder="your name here" required>
+                  
+              <input type="email" id="mail" class="form-element" placeholder="email" required>
+
+              <textarea name="" id="leave-a-message" class="form-element" placeholder="Put your message here" required></textarea>
+              <button type="submit" class="form-btn" for="form">Send</button>
+            </form>
+          </div>
+        </section>
+      </main>
+
+      <footer class="social">
+        <a href="https://www.facebook.com/antoniokb24/" target="_blank">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/antonio-avolio-015936232" target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a id="profile-link" href="https://github.com/BreakingDev24" target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </footer>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

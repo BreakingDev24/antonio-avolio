@@ -1,0 +1,24 @@
+@use "colors" as *;
+
+$logo-font: 'Shadows Into Light', sans-serif;
+$title-font: 'Roboto', Arial, Helvetica, sans-serif;
+$page-font: 'Open Sans', sans-serif;
+
+/*default style*/ 
+h1, h2, h3, h4, h5, h6 {
+    font-family: $title-font;
+    color: $text-primary-color;
+}
+
+em {
+    color: $text-shadow-color;
+    text-decoration: none;
+    font-style: normal;
+}
+
+.section-title{
+    font-size: 3rem;
+    text-shadow:  4px 4px rgb(3, 3, 3);
+    font-weight: 600;
+}
+
